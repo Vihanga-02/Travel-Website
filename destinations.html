@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - ESHAN LK Travel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane-departure"></i> ESHAN LK Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Our Destinations</h1>
+            <p>Discover amazing places and travel packages</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="filter-buttons text-center">
+                        <button class="btn btn-outline-primary active" data-filter="all">All</button>
+                        <button class="btn btn-outline-primary" data-filter="badulla">Badulla</button>
+                        <button class="btn btn-outline-primary" data-filter="galle">Galle</button>
+                        <button class="btn btn-outline-primary" data-filter="trinco">Trico</button>
+                        <button class="btn btn-outline-primary" data-filter="jaffna">Jaffna</button>
+                        <button class="btn btn-outline-primary" data-filter="kandy">Kandy</button>
+                        <button class="btn btn-outline-primary" data-filter="colombo">Colombo</button>
+                         <button class="btn btn-outline-primary" data-filter="anuradhapura">Anuradhapura</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="destinationsGrid">
+                <div class="col-lg-4 col-md-6 destination-item" data-category="KANDY">
+                    <div class="package-card">
+                        <img src=image1.jpeg alt="kandy">
+                        <div class="package-content">
+                            <span class="badge bg-primary">sri lanka</span>
+                            <h3>Kandy</h3>
+                            <p>Very beautiful and comfortable rooms, beautiful environment and delicious food..</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 7 Days</span>
+                                <span><i class="fas fa-hotel"></i> 4-Star Hotel</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong>$1,299</strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('Paris')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 destination-item" data-category="trinco">
+                    <div class="package-card">
+                        <img src=image1.jpeg alt="trinco">
+                        <div class="package-content">
+                            <span class="badge bg-primary">sri lanka</span>
+                            <h3>Trinco</h3>
+                            <p>Tropical paradise with stunning beaches, temples, and lush rice terraces.</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 10 Days</span>
+                                <span><i class="fas fa-hotel"></i> 5-Star Resort</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong>$1,599</strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('Trinco')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 destination-item" data-category="jaffna">
+                    <div class="package-card">
+                        <img src=image1.jpeg alt="jaffna">
+                        <div class="package-content">
+                            <span class="badge bg-primary">sri lanka</span>
+                            <h3>Jaffna</h3>
+                            <p>You can see an ancient city as well as ancient temples and cultural food..</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 8 Days</span>
+                                <span><i class="fas fa-hotel"></i> 4-Star Hotel</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong>$1,899</strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('Jaffna')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 destination-item" data-category="galle">
+                    <div class="package-card">
+                        <img src=image1.jpeg alt="Galle">
+                        <div class="package-content">
+                            <span class="badge bg-primary">sri lanka</span>
+                            <h3>Galle</h3>
+                            <p>Luxurious Bogie Hotel Complex with beautiful beach</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 6 Days</span>
+                                <span><i class="fas fa-hotel"></i> Luxury Villa</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong>$1,499</strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('Galle')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 destination-item" data-category="badulla">
+                    <div class="package-card">
+                        <img src= image1.jpeg alt="BADULLA">
+                        <div class="package-content">   
+                            <span class="badge bg-primary">sri lanka</span>
+                            <h3>BADULLA</h3>
+                            <p>A beautifully designed resort in a beautiful ecosystem with natural beauty.</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 5 Days</span>
+                                <span><i class="fas fa-hotel"></i> 4-Star Hotel</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong>$1,199</strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('badulla')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 destination-item" data-category="colombo">
+                    <div class="package-card">
+                        <img src=image1.jpeg alt="COLOMBO">
+                        <div class="package-content">
+                            <span class="badge bg-primary">sri lanka</span>
+                            <h3>COLOMBO</h3>
+                            <p>The stunning Lotus Tower and a beautiful harbor await you..</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 9 Days</span>
+                                <span><i class="fas fa-hotel"></i> 5-Star Hotel</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong>$2,299</strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('Colombo')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 destination-item" data-category="kandy">
+                    <div class="package-card">
+                        <img src=image1.jpeg alt="sri lanka">
+                        <div class="package-content">
+                           <span class="badge bg-primary">sri lanka</span>
+                            <h3>SIGIRIYA
+                            </h3>
+                            <p>Sigiriya shows the pride and creativity of Sri Lanka. It is also considered a national monument of Sri Lanka. Come and see this amazing place for yourself..</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> 6 Days</span>
+                                <span><i class="fas fa-hotel"></i> 5-Star Hotel</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong>$1,799</strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('Sigiriya')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 destination-item" data-category="anuradhapura">
+                    <div class="package-card">
+                        <img src=image1.jpeg alt="sri lanka">
+                        <div class="package-content">
+                            <span class="badge bg-primary">sri lanka</span>
+                            <h3>Ruwanwali Maha Saya</h3>
+                            <p>This is the oldest historical temple in Sri Lanka.</p>
+                            <div class="package-details">
+                                <span><i class="fas fa-calendar"></i> </span>
+                                <span><i class="fas fa-hotel"></i> </span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="price">From <strong></strong></div>
+                                <button class="btn btn-sm btn-primary" onclick="showDetails('Anuradhapura')">View Package</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5><i class="fas fa-plane-departure"></i> ESHAN LK Travel</h5>
+                    <p class="text-muted">Your trusted partner in creating unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Contact Info</h6>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +94 76123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@eshanardithya.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, colombo</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6>Newsletter</h6>
+                    <p class="text-muted">Subscribe for travel tips and deals</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" class="form-control" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-muted">
+                <p>&copy; 2024 Wanderlust Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>
