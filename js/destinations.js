@@ -41,5 +41,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function showDetails(destination) {
-    alert('Thank you for your interest in ' + destination + '!\n\nPlease contact us at:\n\nPhone: +1 (555) 123-4567\nEmail: info@wanderlust.com\n\nOur travel experts will help you plan the perfect trip!');
+    alert('Thank you for your interest in ' + destination + '!\n\nPlease contact us at:\n\nPhone: +94 76123-4567\nEmail: info@eshanardithya.com\n\nOur travel experts will help you plan the perfect trip!');
 }
